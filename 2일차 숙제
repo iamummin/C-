@@ -1,0 +1,22 @@
+#include<stdio.h>
+#pragma warning(disable:4996)
+int main() {
+	printf("## 지폐로 교환할 돈은 ?");
+	int m;
+	scanf("%d", &m);
+	int m50000, m10000, m5000, m1000;
+	m50000 = m / 50000;
+	m = m - m50000 * 50000;
+	m10000 = m / 10000;
+	m = m - m10000 * 10000;
+	m5000 = m / 5000;
+	m = m - m5000 * 5000;
+	m1000 = m / 1000;
+	m = m - m1000 * 1000;
+	printf("오만 원짜리 => %d 장\n", m50000);
+	printf("만 원짜리 => %d 장\n", m10000);
+	printf("오천 원짜리 => %d 장\n", m5000);
+	printf("천 원짜리 => %d 장\n", m1000);
+	printf("지폐로 바꾸지 못한 잔돈 => %d 원", m);
+	return 0;
+}
