@@ -1,0 +1,17 @@
+#include <stdio.h>
+#pragma warning(disable:4996)
+int main() {
+	int i, j;
+	printf("시작값 ==> ");
+	scanf("%d", &i);
+	printf("\n");
+	printf("끝 값 ==> ");
+	scanf("%d", &j);
+	while (i <= j) {
+		if (i % 2 != 0) {
+			printf("%d ", i);
+		}
+		i++;
+	}
+	return 0;
+}
